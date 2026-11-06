@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="서귀포 연안 방파제에 산호 복원·번식 장치 6종을 붙인 인터랙티브 3D 설계안">
+<meta name="description" content="서귀포 연안 방파제 항내 쪽 벽면에 산호 정착 패널과 승강식 육묘 플랫폼을 붙인 인터랙티브 3D 설계안 (Rev. B)">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%230a2229%27/%3E%3Cpath d=%27M4 20q6-6 12 0t12 0%27 stroke=%27%23ef7a5f%27 stroke-width=%273%27 fill=%27none%27/%3E%3C/svg%3E">
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>산호 순환 방파제</title>
@@ -211,14 +211,14 @@ td .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
 <body>
 <div class="wrap">
   <header>
-    <span class="eyebrow">설계안 · 서귀포 연안 수심 15 m 방파제 30 m 구간</span>
+    <span class="eyebrow">설계안 Rev. B · 벽면 부착형 · 서귀포 연안 수심 15 m 방파제 60 m 구간</span>
     <h1>산호 순환 방파제</h1>
-    <p class="lede">순환형 산호 복원 시뮬레이터에서 산호 피복률을 가장 크게 바꾼 변수는 열 스트레스였고, 그다음이 pH였다. 이 방파제는 그 순서대로 장치를 붙인다. 차광막과 승강식 육묘 선반이 산호가 받는 열을 줄이고, 감태 숲과 광물 부착 프레임이 주변 pH를 높이며, 계단식 정착 테라스가 유성생식 개체를 받아 유전 다양성을 지킨다. 센서가 잰 값은 다시 시뮬레이터로 들어가 다음 해 복원 전략을 정한다.</p>
+    <p class="lede">순환형 산호 복원 시뮬레이터에서 산호 피복률을 가장 크게 바꾼 변수는 열 스트레스였고, 그다음이 pH였다. 처음 설계안은 방파제 앞에 계단형 테라스를 쌓았지만, 평평한 단에는 퇴적물이 쌓여 유생이 붙기 어렵다. 그래서 이번 안은 기존 방파제의 항내 쪽 벽면에 정착 패널을 수심 4·8·12 m 세 줄로 붙이고, 옆에 띄운 승강식 육묘 플랫폼이 고수온 때 12 m로 내려가 열을 피한다. 차광막은 열을, 감태 롱라인은 pH를 맡고, 센서가 잰 값은 다시 시뮬레이터로 들어가 다음 해 복원 전략을 정한다.</p>
     <div class="titleblock">
-      <span>본체 <b>케이슨 30 × 12 m, 마루 +4 m</b></span>
+      <span>본체 <b>케이슨 60 × 12 m, 마루 +3 m</b></span>
       <span>바다 쪽 <b>테트라포드 소파제</b></span>
-      <span>항내 쪽 <b>복원 장치 6종</b></span>
-      <span>근거 <b>시뮬레이터 37회 실행(조건당 15회 반복)</b></span>
+      <span>항내 쪽 벽면 <b>정착 패널 111장 + 장치 5종</b></span>
+      <span>근거 <b>시뮬레이터 구조물 비교(조건당 15회 반복)</b></span>
     </div>
   </header>
 
@@ -240,7 +240,7 @@ td .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
         <div class="stat"><span class="l">DHW (°C·주)</span><span class="v" id="sDhw">–</span><span class="s" id="sDhwS"></span></div>
         <div class="stat"><span class="l">pH</span><span class="v" id="sPh">–</span><span class="s" id="sPhS"></span></div>
         <div class="stat"><span class="l">차광막</span><span class="v" id="sShade">–</span><span class="s" id="sShadeS"></span></div>
-        <div class="stat"><span class="l">육묘 선반 (상단)</span><span class="v" id="sRack">–</span><span class="s" id="sRackS"></span></div>
+        <div class="stat"><span class="l">육묘 트레이 (상단)</span><span class="v" id="sRack">–</span><span class="s" id="sRackS"></span></div>
       </div>
       <div class="statnote">운전 모드별 예시 값이며 실측값이 아니다. DHW는 월평균 최고 수온보다 1 °C 이상 높은 날이 쌓인 정도다.</div>
     </div>
@@ -274,11 +274,12 @@ td .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
       <table class="target">
         <thead><tr><th>항목</th><th>목표</th><th>시뮬레이션 근거</th><th>담당 모듈</th></tr></thead>
         <tbody>
-          <tr><td>연간 최대 DHW</td><td>8 미만</td><td>DHW 4~6인 해는 견뎠지만 11.2인 해에 피복률이 0.67에서 0.13으로 무너졌다.</td><td>B 육묘 선반, C 차광막</td></tr>
-          <tr><td>열파 때 국지 수온 이상</td><td>1.0 → 0.5 °C 이하</td><td>엘니뇨 수온 이상을 1.0에서 0.5로 낮추면 평균 피복률이 0.35에서 0.66으로 올랐다. 1.5면 0.09였다.</td><td>B 육묘 선반, C 차광막</td></tr>
-          <tr><td>pH / 아라고나이트 Ω</td><td>8.2 / Ω 4 이상</td><td>pH 7.8 → 0.18, 8.05 → 0.35, 8.2 → 0.49. pH 8.2에서는 염분 35와 37 결과가 같아 Ω 4 이상에서는 효과가 포화되는 것으로 보인다.</td><td>D 감태 숲, E 광물 부착</td></tr>
-          <tr><td>염분</td><td>33~35 PSU</td><td>28 PSU에서 0.30, 35 PSU에서 0.35. 시뮬레이터에서 염분은 Ω를 통해서만 작용해 영향이 작게 나왔다.</td><td>B 육묘 선반, F 센서</td></tr>
-          <tr><td>복원 전략</td><td>혼합 + 순환 자동 조정</td><td>마이크로프래깅만 쓰면 피복률은 가장 높지만 유전형 비율이 0.07이다. 혼합 + 순환은 0.31~0.43을 지켰다.</td><td>A 정착 테라스, F 센서</td></tr>
+          <tr><td>연간 최대 DHW</td><td>8 미만</td><td>DHW 4~6인 해는 견뎠지만 11.2인 해에 피복률이 0.67에서 0.13으로 무너졌다.</td><td>B 육묘 플랫폼, C 차광막</td></tr>
+          <tr><td>열파 때 국지 수온 이상</td><td>1.0 → 0.5 °C 이하</td><td>엘니뇨 수온 이상을 1.0에서 0.5로 낮추면 평균 피복률이 0.35에서 0.66으로 올랐다. 1.5면 0.09였다.</td><td>B 육묘 플랫폼, C 차광막</td></tr>
+          <tr><td>pH / 아라고나이트 Ω</td><td>8.2 / Ω 4 이상</td><td>pH 7.8 → 0.18, 8.05 → 0.35, 8.2 → 0.49. pH 8.2에서는 염분 35와 37 결과가 같아 Ω 4 이상에서는 효과가 포화되는 것으로 보인다.</td><td>D 감태 롱라인</td></tr>
+          <tr><td>염분</td><td>33~35 PSU</td><td>28 PSU에서 0.30, 35 PSU에서 0.35. 시뮬레이터에서 염분은 Ω를 통해서만 작용해 영향이 작게 나왔다.</td><td>B 육묘 플랫폼, F 센서</td></tr>
+          <tr><td>복원 전략</td><td>혼합 + 순환 자동 조정</td><td>마이크로프래깅만 쓰면 피복률은 가장 높지만 유전형 비율이 0.07이다. 혼합 + 순환은 0.31~0.43을 지켰다.</td><td>A 정착 패널, F 센서</td></tr>
+          <tr><td>설치 구조물</td><td>벽면 패널 + 승강 플랫폼</td><td>확장 시뮬레이터(10년당 0.2 °C)에서 50년 뒤 피복률·유전형 수: 구조물 없음 32%·46, 계단형 43%·48, 벽면 패널 43%·80, 패널 + 승강 플랫폼 47%·85. 10년당 0.3 °C에서는 한 수심에만 둔 구조물이 3~6%로 무너졌고 세 수심에 나눈 패널은 33%를 지켰다.</td><td>A 정착 패널, B 육묘 플랫폼</td></tr>
         </tbody>
       </table>
     </div>
@@ -288,7 +289,7 @@ td .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
     <div class="sec-head">
       <span class="eyebrow">모듈 사양</span>
       <h2>여섯 가지 장치</h2>
-      <p class="muted">치수는 설계 가정값이다. 3D 모형은 보기 쉽게 개수와 크기를 단순화했다.</p>
+      <p class="muted">치수는 설계 가정값이며 Blender 모델·설계도 CB-02와 같다. 감태 롱라인은 52 m 중 앞부분만 표시했다.</p>
     </div>
     <div class="tablebox">
       <table class="spec" id="specTable">
@@ -304,10 +305,10 @@ td .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
       <h2>센서 → 시뮬레이터 → 장치 제어</h2>
     </div>
     <ol class="loop">
-      <li><h3>측정</h3><p>센서 기둥이 수심 3·6·10·14 m의 수온, 염분, pH를 10분마다 보낸다.</p></li>
+      <li><h3>측정</h3><p>센서 계류선이 수심 3·6·10·14 m의 수온, 염분, pH를 10분마다 보낸다.</p></li>
       <li><h3>계산</h3><p>수온으로 DHW를 쌓고, 시뮬레이터의 Ω 계산기로 Ω를 구한다. 염분 32 PSU 미만이 이어진 날도 센다.</p></li>
-      <li><h3>제어</h3><p>DHW 2 이상이면 차광막을 펼치고 선반을 가장 시원한 수심으로 내린다. 저염분층이 생기면 선반을 그 아래로, 태풍 특보면 차광막을 걷는다.</p></li>
-      <li><h3>평가</h3><p>해마다 테라스와 선반의 피복률, 유전형 비율을 조사한다.</p></li>
+      <li><h3>제어</h3><p>DHW 2 이상이면 차광막을 펼치고 육묘 트레이를 12 m로 내린다. 저염분층이 생겨도 트레이를 그 아래로 내리고, 태풍 특보면 차광막을 걷고 패널을 레일에 잠근다.</p></li>
+      <li><h3>평가</h3><p>해마다 패널과 트레이의 피복률, 유전형 비율을 조사하고, 2년 키운 묘목을 패널로 옮긴다.</p></li>
       <li><h3>갱신</h3><p>시뮬레이터의 [가정] 파라미터를 실측값으로 바꾸고, 혼합 + 순환 자동 조정으로 다음 해 마이크로프래깅 : 유성생식 비율을 정한다.</p></li>
     </ol>
     <p class="loop-back">갱신한 비율과 기준값은 다음 해 1번 측정부터 다시 적용된다.</p>
@@ -335,8 +336,8 @@ td .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
     </div>
     <div class="limits">
       <div><h3>시뮬레이터 가정</h3><p>파라미터는 [가정] 값이고, 장치 효과는 엘니뇨 수온 이상과 pH 값을 바꾸는 방식으로 근사했다. 결과는 전략과 조건의 상대 비교로만 읽어야 한다.</p></div>
-      <div><h3>빠진 변수</h3><p>시뮬레이터에는 빛과 저염 삼투 스트레스가 없다. 2024년 서귀포 연산호 붕괴는 고수온과 50일 넘는 저염분 노출이 겹친 것으로 보고됐으므로, 저염 노출 지표를 모델에 추가해야 한다.</p></div>
-      <div><h3>검증 안 된 효과</h3><p>감태 숲이 pH를 얼마나 올리는지, 전기 광물 부착이 산호 성장을 돕는지는 확인된 수치가 없다. 같은 크기의 무장치 대조 구간을 두고 비교한다.</p></div>
+      <div><h3>가정값인 계수</h3><p>확장 시뮬레이터에 수심별 열·빛 감쇠, 저염분층 폐사, 퇴적물에 따른 유생 정착을 넣었지만 혼합층 깊이, 감쇠 길이, 저염 폐사율, 면별 퇴적 비율은 [가정]이다. 2024년 서귀포 연산호 붕괴는 고수온과 50일 넘는 저염분 노출이 겹친 것으로 보고됐으므로 실측으로 보정해야 한다.</p></div>
+      <div><h3>검증 안 된 효과</h3><p>감태 롱라인이 pH를 얼마나 올리는지, 패널 표면 홈이 정착률을 얼마나 높이는지는 확인된 수치가 없다. 저전압 광물 부착은 효과가 검증되지 않아 이번 안에서 뺐다. 같은 크기의 무장치 대조 구간을 두고 비교한다.</p></div>
       <div><h3>설치 허가</h3><p>서귀포 앞바다에는 문섬·범섬 천연보호구역과 제주 연안 연산호 군락(천연기념물)이 있다. 설치 위치가 그 주변이면 국가유산청 등과 협의해야 한다.</p></div>
     </div>
   </section>
@@ -344,7 +345,7 @@ td .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
   <section>
     <div class="sec-head"><span class="eyebrow">출처</span></div>
     <ol class="sources">
-      <li>순환형 산호 복원 시뮬레이터(사용자 제작, localhost) 전략 비교 결과, 2026-11-05 실행</li>
+      <li>순환형 산호 복원 시뮬레이터(사용자 제작, localhost) 전략 비교 결과, 2026-11-05 실행 · 구조물 비교(확장판), 2026-11-06 실행</li>
       <li><a href="https://www.fnnews.com/news/202410100811004396" target="_blank" rel="noopener">파이낸셜뉴스, 서귀포 산호 백화·폐사 이슈리포트 보도 (2024-10-10)</a></li>
       <li><a href="https://www.fnnews.com/news/202410270701330314" target="_blank" rel="noopener">파이낸셜뉴스(연합뉴스), 섶섬·문섬·범섬 8월 평균 표층 수온 30 °C (2024-10-27)</a></li>
       <li><a href="https://www.asiae.co.kr/en/article/2024100920005700710" target="_blank" rel="noopener">아시아경제, 2024년 8월 제주 평균 수온 27.8 °C와 수심 10 m 미만 피해 (2024-10-09)</a></li>
@@ -353,7 +354,9 @@ td .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
       <li><a href="https://en.fnnews.com/news/202608261347484119" target="_blank" rel="noopener">Financial News, 2026년 문섬·범섬 연산호 붕괴 조사 (2026-08-26)</a></li>
       <li><a href="https://www.scimex.org/newsfeed/artificially-creating-shade-for-corals-could-help-prevent-them-from-bleaching" target="_blank" rel="noopener">Butcherine 외, 30% 차광이 백화를 최대 3 DHW 늦춤 (Frontiers in Marine Science, 2023)</a></li>
       <li><a href="https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2026.1910202/full" target="_blank" rel="noopener">Neely 외, 플로리다 키스 현장 60% 차광 실험 (Frontiers in Marine Science, 2026)</a></li>
-      <li><a href="https://media.neliti.com/media/publications/101840-EN-study-on-biorock-technique-using-three-d.pdf" target="_blank" rel="noopener">Zamani 외, Biorock 양극 재질 비교 수조 실험 (2010)</a></li>
+      <li>Perez 외, 퇴적막 0.9 mg/cm² 이상에서 산호 유생 정착 0 (PeerJ, 2014)</li>
+      <li>Rogers 외, 인공 구조물 가입 개체의 66%가 수직면에서 관찰 (1984)</li>
+      <li>Fabregat-Malé 외, 부유식 육묘 구조가 해저 고정식보다 빠른 성장 (2024)</li>
     </ol>
   </section>
 </div>
@@ -367,42 +370,42 @@ td .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
 
   /* ---------- Content ---------- */
   var MODULES = [
-    { id: "A", name: "계단식 정착 테라스", short: "정착 테라스", color: "#e58b78", anchor: [-9, -3.2, 9],
-      where: "항내 쪽 수심 4·8·12 m 세 단. 단마다 폭 4 m, 길이 30 m. 표면에 1~2 cm 홈을 낸 육각 정착판(지름 0.84 m)을 깐다.",
-      how: "산란 시기(종별 확인 필요) 전에 정착판을 세척하거나 새것으로 바꾼다. 깊이가 다른 세 단에 나눠 한 번의 열파로 모두 잃지 않게 한다.",
-      why: "2024년 서귀포 피해는 수심 10 m 미만에 집중됐다(범섬 5~10 m 빛단풍돌산호 대부분 폐사). 시뮬레이터에서 유성생식을 섞은 전략만 유전형 비율 0.31~0.43을 지켰다." },
-    { id: "B", name: "승강식 육묘 선반", short: "육묘 선반", color: "#f0b23e", anchor: [7, 5.6, 22],
-      where: "테라스 바깥 수심 15 m 해저에 선 철골 탑 2기. 탑마다 2.4 × 1.4 m 트레이 3단, 트레이당 마이크로프래그 약 300개(10 cm 간격).",
-      how: "윈치로 상단 트레이를 수심 3~12.5 m 사이에서 옮긴다. 평상시엔 빛이 충분한 5 m, 열파 때는 센서 기둥이 잰 가장 시원한 수심, 저염분층이 생기면 그 아래로 내린다.",
-      why: "시뮬레이터에서 열파 때 수온 이상을 1.0에서 0.5 °C로 낮추면 평균 피복률이 0.35에서 0.66으로 올랐다. 표층 저염분수도 피할 수 있다." },
-    { id: "C", name: "개폐식 차광막", short: "차광막", color: "#9fb4bd", anchor: [-2, 1.2, 15],
-      where: "60% 차광망, 펼친 면적 28 × 18 m. 방파제 마루의 롤러에서 풀려 수면 바로 아래에 뜬다.",
-      how: "DHW가 2에 닿으면 펼쳐 4가 되기 전에 덮는다. 태풍 특보 때는 롤러로 감아 회수한다.",
+    { id: "A", name: "벽면 부착 정착 패널", short: "정착 패널", color: "#e58b78", anchor: [-21, -4, 6.6],
+      where: "케이슨 항내 쪽 벽면, 수심 4·8·12 m 세 줄 × 37열 = 111장. 1.15 m 세라믹 판을 벽에서 0.4 m 띄워 열마다 T형 가이드 레일에 건다. 표면에 2~5 mm 홈을 낸다(가정).",
+      how: "산란 시기(종별 확인 필요) 전에 레일로 패널을 끌어올려 세척하거나 교체한다. 육묘 플랫폼에서 2년 키운 묘목을 패널에 옮겨 붙인다. 세 수심에 나눠 한 번의 열파로 모두 잃지 않게 한다.",
+      why: "수직면은 평평한 단보다 퇴적물이 덜 쌓인다. 퇴적막이 0.9 mg/cm²를 넘으면 유생 정착이 0이 된다(Perez 외, 2014). 확장 시뮬레이터에서 벽면 패널은 계단형과 피복률이 같으면서(43%) 유전형 수가 80 대 48로 많았다." },
+    { id: "B", name: "승강식 육묘 플랫폼", short: "육묘 플랫폼", color: "#f0b23e", anchor: [4, 3.0, 22],
+      where: "벽에서 13 m 떨어진 부유 프레임 10 × 6 m, 해저 앵커 4개로 계류. 윈치로 트레이 3단(8.6 × 4.6 m, 단당 마이크로프래그 약 100개)을 매단다. 지붕에 태양광 1장.",
+      how: "평상시 트레이 상단은 빛이 충분한 수심 5 m. 표층 DHW가 2에 닿거나, 저염분층이 생기거나, 태풍 특보가 나면 12 m로 내린다. 2년 키운 묘목은 A 패널로 옮긴다.",
+      why: "확장 시뮬레이터에서 패널 + 승강 플랫폼이 피복률 47%, 유전형 수 85로 가장 좋았다. 10년당 0.3 °C 온난화에서는 한 수심에 고정한 구조물이 3~6%로 무너졌다. 부유식 육묘 구조가 해저 고정식보다 빨리 자란 사례가 있다(Fabregat-Malé 외, 2024)." },
+    { id: "C", name: "개폐식 차광막", short: "차광막", color: "#9fb4bd", anchor: [-12, 5.4, 11],
+      where: "케이슨 마루의 롤러에서 팔 10개를 따라 8.9 m 펼친다. 폭 54 m, 차광률 30~60%.",
+      how: "표층 DHW가 2에 닿으면 펼쳐 4가 되기 전에 덮는다. 태풍 특보 때는 롤러로 감아 회수한다.",
       why: "실험실에서 30% 차광이 백화를 최대 3 DHW 늦췄다(Butcherine 외, 2023). 플로리다 현장에서 60% 차광 후 추가 백화가 없었고, 폭풍 때는 철거했다(Neely 외, 2026)." },
-    { id: "D", name: "감태 완충 숲", short: "감태 숲", color: "#9aa83f", anchor: [21, -1.6, 14],
-      where: "방파제 끝 옆에 방파제와 직각으로 연승 3줄 × 28 m. 로프는 수심 3 m, 엽체는 수심 3~8 m까지 늘어진다. 조류 상류 쪽에 두도록 현장 유속을 먼저 잰다.",
-      how: "광합성으로 CO₂를 흡수해 산호 주변 pH와 Ω를 올리는 것이 목표다. 센서 기둥의 pH로 효과를 확인한다.",
-      why: "시뮬레이터에서 pH 8.05 → 8.2로 평균 피복률이 0.35 → 0.49가 됐다. CO₂를 공급하면 반대로 pH가 내려간다. 2024년 문섬 감태 군락이 석회관갯지렁이에 덮인 사례가 있어 정기 관리가 필요하다." },
-    { id: "E", name: "저전압 광물 부착 (실험)", short: "광물 부착", color: "#57d4ff", anchor: [-12.5, -12.6, 25.5],
-      where: "마루의 태양광 패널 6장이 육묘 탑을 음극으로 쓴다. 티타늄 양극판은 산호에서 6 m 이상 떨어진 해저에 둔다.",
-      how: "저전압 직류(1.5~6 V 범위에서 시험)를 흘려 음극 표면에 탄산칼슘을 쌓는다. 전류를 흘리지 않는 대조 탑과 성장률을 비교한다.",
-      why: "수조 실험에서 티타늄 양극이 가장 덜 소모돼 2 A가 제안됐다(Zamani 외, 2010). 정체 수조에서 양극 쪽 pH가 8에서 6으로 떨어져 거리를 둔다. 산호 성장 촉진 효과는 원자료로 검증되지 않았다.",
-      flag: "검증 필요" },
-    { id: "F", name: "센서 기둥 · 순환 제어", short: "센서", color: "#f4e04d", anchor: [0, 2.6, 22],
-      where: "육묘 탑 사이 계류 기둥. 수심 3·6·10·14 m에 수온·염분·pH 로거, 수면 부이에서 10분마다 전송한다.",
+    { id: "D", name: "감태 롱라인", short: "감태", color: "#9aa83f", anchor: [33, -1.2, 24],
+      where: "방파제 끝에서 벽과 직각으로 2줄 × 52 m. 로프는 수심 1.5 m, 엽체는 2~4 m 늘어진다. 조류 상류 쪽에 두도록 현장 유속을 먼저 잰다.",
+      how: "광합성으로 CO₂를 흡수해 산호 주변 pH와 Ω를 올리는 것이 목표다. 센서 계류선의 pH로 효과를 확인한다.",
+      why: "시뮬레이터에서 pH 8.05 → 8.2로 평균 피복률이 0.35 → 0.49가 됐다. 2024년 문섬 감태 군락이 석회관갯지렁이에 덮인 사례가 있어 정기 관리가 필요하다." },
+    { id: "E", name: "태양광 전력", short: "태양광", color: "#57d4ff", anchor: [-15, 5.2, 1],
+      where: "케이슨 마루에 패널 7장, 플랫폼 지붕에 1장. 마루의 제어함이 롤러 모터와 센서에 전원을 보낸다.",
+      how: "낮에 축전지를 채워 밤이나 흐린 날에도 승강과 측정을 이어 간다. 저전압 광물 부착은 효과가 검증되지 않아 이번 안에서 뺐다.",
+      why: "육지 전원선을 바다까지 끌어오지 않아도 된다. 윈치·센서 소비 전력에 맞춘 용량 계산은 아직 하지 않았다.",
+      flag: "용량 계산 필요" },
+    { id: "F", name: "센서 계류 · 순환 제어", short: "센서", color: "#f4e04d", anchor: [-8, 2.8, 16],
+      where: "벽과 플랫폼 사이 계류선(벽에서 10 m). 수심 3·6·10·14 m에 수온·염분·pH 로거, 수면 부이에서 10분마다 전송한다.",
       how: "DHW, Ω, 저염 노출 일수를 계산해 B·C를 제어하고, 해마다 피복률과 유전형 비율로 다음 해 복원 비율을 정한다.",
       why: "KIOST와 제주 세계유산본부가 범섬 5~30 m에 수온·염분 관측망을 깔았다(2025~). 2024년 연산호 붕괴는 고수온과 50일 넘는 저염분 노출이 겹친 것으로 보고됐다." }
   ];
 
   var MODES = {
-    normal: { desc: "차광막을 감아 두고 육묘 선반은 빛이 충분한 수심 5 m에 둔다.",
+    normal: { desc: "차광막을 감아 두고 육묘 트레이는 빛이 충분한 수심 5 m에 둔다. 패널은 레일에 고정한다.",
       temp: 24.0, sal: 34.6, dhw: 0.0, ph: 8.12, shade: 0, rack: -5, shadeTxt: "감음", wave: 0.18, bg: 0x0a2229, lens: 0 },
-    heat: { desc: "DHW가 2를 넘었다. 60% 차광막을 펼치고, 센서 기둥이 잰 가장 시원한 수심(예시 11 m)으로 선반을 내린다.",
-      temp: 29.6, sal: 34.1, dhw: 5.2, ph: 8.05, shade: 1, rack: -11, shadeTxt: "60% 전개", wave: 0.18, bg: 0x22261f, lens: 0 },
-    fresh: { desc: "표층 염분이 32 PSU 아래로 3일 넘게 내려갔다. 선반을 저염분층 아래(예시 9 m)로 내린다.",
-      temp: 27.2, sal: 30.4, dhw: 1.8, ph: 8.02, shade: 0, rack: -9, shadeTxt: "감음", wave: 0.22, bg: 0x0c2a36, lens: 1 },
-    typhoon: { desc: "태풍 특보가 났다. 차광막을 롤러에 감아 회수하고 선반을 가장 깊은 위치(상단 12.5 m)에 고정한다.",
-      temp: 26.1, sal: 33.2, dhw: 2.6, ph: 8.08, shade: 0, rack: -12.5, shadeTxt: "회수", wave: 0.85, bg: 0x111b20, lens: 0 }
+    heat: { desc: "표층 DHW가 2를 넘었다. 차광막을 펼치고 육묘 트레이를 수심 12 m로 내린다.",
+      temp: 29.6, sal: 34.1, dhw: 5.2, ph: 8.05, shade: 1, rack: -12, shadeTxt: "전개", wave: 0.18, bg: 0x22261f, lens: 0 },
+    fresh: { desc: "표층 염분이 32 PSU 아래로 3일 넘게 내려갔다. 트레이를 저염분층(예시 0~4 m) 아래 12 m로 내리고, 4 m 패널 줄을 점검한다.",
+      temp: 27.2, sal: 30.4, dhw: 1.8, ph: 8.02, shade: 0, rack: -12, shadeTxt: "감음", wave: 0.22, bg: 0x0c2a36, lens: 1 },
+    typhoon: { desc: "태풍 특보가 났다. 차광막을 롤러에 감아 회수하고, 트레이를 12 m에 두고 계류를 점검하며, 패널을 레일에 잠근다.",
+      temp: 26.1, sal: 33.2, dhw: 2.6, ph: 8.08, shade: 0, rack: -12, shadeTxt: "회수", wave: 0.85, bg: 0x111b20, lens: 0 }
   };
 
   var SCEN = [
@@ -525,13 +528,13 @@ td .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
   var scene = new THREE.Scene();
   var bgColor = new THREE.Color(MODES.normal.bg);
   scene.background = bgColor.clone();
-  scene.fog = new THREE.Fog(bgColor.clone(), 55, 150);
+  scene.fog = new THREE.Fog(bgColor.clone(), 80, 230);
   var camera = new THREE.PerspectiveCamera(38, 1.4, 0.1, 400);
-  camera.position.set(-42, 16, 52);
+  camera.position.set(-58, 20, 66);
   var controls = new THREE.OrbitControls(camera, renderer.domElement);
-  controls.target.set(0, -5, 7);
+  controls.target.set(0, -5, 12);
   controls.enableDamping = true; controls.dampingFactor = 0.08;
-  controls.minDistance = 12; controls.maxDistance = 130;
+  controls.minDistance = 10; controls.maxDistance = 170;
   controls.update();
 
   scene.add(new THREE.HemisphereLight(0xd6eef5, 0x123038, 0.85));
@@ -544,7 +547,7 @@ td .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
 
   // Seabed
   (function () {
-    var g = new THREE.PlaneGeometry(140, 140, 70, 70); g.rotateX(-Math.PI / 2);
+    var g = new THREE.PlaneGeometry(170, 170, 80, 80); g.rotateX(-Math.PI / 2);
     var p = g.attributes.position;
     for (var i = 0; i < p.count; i++) {
       var x = p.getX(i), z = p.getZ(i);
@@ -556,21 +559,22 @@ td .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
     var seed = 7; function rnd() { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; }
     for (var r = 0; r < 26; r++) {
       var rock = new THREE.Mesh(rockGeo, rockMat);
-      var rx = -40 + rnd() * 80, rz = -40 + rnd() * 80;
-      if (rz > -24 && rz < 36 && Math.abs(rx) < 17) continue;
+      var rx = -60 + rnd() * 120, rz = -45 + rnd() * 95;
+      if (rz > -24 && rz < 42 && Math.abs(rx) < 38) continue;
       rock.position.set(rx, -14.8, rz); rock.scale.setScalar(0.6 + rnd() * 1.8); rock.rotation.set(rnd() * 3, rnd() * 3, 0);
       base.add(rock);
     }
   })();
 
-  // Caisson + parapet
+  // Caisson + crown wall (60 m long, top +3, crown +6)
   var concrete = std(0xa3a8a4);
-  var caisson = new THREE.Mesh(new THREE.BoxGeometry(30, 19, 12), concrete); caisson.position.set(0, -5.5, 0); base.add(caisson);
-  var parapet = new THREE.Mesh(new THREE.BoxGeometry(30, 1.8, 1.4), concrete); parapet.position.set(0, 4.9, -5.3); base.add(parapet);
+  var caisson = new THREE.Mesh(new THREE.BoxGeometry(60, 18, 12), concrete); caisson.position.set(0, -6, 0); base.add(caisson);
+  var parapet = new THREE.Mesh(new THREE.BoxGeometry(60, 3, 3), concrete); parapet.position.set(0, 4.5, -4.5); base.add(parapet);
+  for (var jx = -24; jx <= 24; jx += 12) { var jt = new THREE.Mesh(new THREE.BoxGeometry(0.15, 18, 0.06), std(0x6d7270)); jt.position.set(jx, -6, 6.03); base.add(jt); }
   // Rubble mound wedge (seaward)
   (function () {
     var sh = new THREE.Shape(); sh.moveTo(6, 3); sh.lineTo(6, -15); sh.lineTo(23, -15); sh.lineTo(6, 3);
-    var g = new THREE.ExtrudeGeometry(sh, { depth: 30, bevelEnabled: false }); g.rotateY(Math.PI / 2); g.translate(-15, 0, 0);
+    var g = new THREE.ExtrudeGeometry(sh, { depth: 60, bevelEnabled: false }); g.rotateY(Math.PI / 2); g.translate(-30, 0, 0);
     base.add(new THREE.Mesh(g, std(0x5b605d, { flatShading: true })));
   })();
   // Tetrapods (instanced, 4 legs)
@@ -582,9 +586,9 @@ td .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
     var pos = [], seed = 11; function rnd() { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; }
     var nrm = new THREE.Vector3(0, 17, -18).normalize();
     for (var t = 0.04; t <= 0.97; t += 0.105) {
-      for (var x = -14; x <= 14; x += 2.35) {
+      for (var x = -29; x <= 29; x += 2.35) {
         var px = x + (rnd() - 0.5) * 0.8 + (Math.round(t * 10) % 2) * 1.1;
-        if (px > 14.6) continue;
+        if (px > 29.6) continue;
         var pz = -6 - 17 * t, py = 3 - 18 * t;
         pos.push([px + 0, py + nrm.y * 0.7, pz + nrm.z * 0.7]);
       }
@@ -599,95 +603,116 @@ td .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
     legs.forEach(function (leg) { leg.instanceMatrix.needsUpdate = true; base.add(leg); });
   })();
 
-  // A — terraces + settlement tiles + juveniles
+  // A — wall-mounted settlement panels on guide rails
   (function () {
-    var eco = std(0x9c968a, { flatShading: true });
-    [[6, 10, -4], [10, 14, -8], [14, 18, -12]].forEach(function (t) {
-      var h = t[2] + 15, d = t[1] - t[0];
-      var b = new THREE.Mesh(new THREE.BoxGeometry(30, h, d), eco); b.position.set(0, -15 + h / 2, (t[0] + t[1]) / 2); groups.A.add(b);
+    var XS = []; for (var i = 0; i < 37; i++) XS.push(-27 + i * 1.5);
+    var ROWS = [-4, -8, -12];
+    var m = new THREE.Matrix4(), c = new THREE.Color();
+    var seed = 3; function rnd() { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; }
+    var rails = new THREE.InstancedMesh(new THREE.BoxGeometry(0.12, 17, 0.12), std(0x8b979c, { metalness: 0.5, roughness: 0.45 }), XS.length);
+    var brackets = new THREE.InstancedMesh(new THREE.BoxGeometry(0.9, 0.06, 0.32), std(0x8b979c, { metalness: 0.5, roughness: 0.45 }), XS.length * 6);
+    var panels = new THREE.InstancedMesh(new THREE.BoxGeometry(1.15, 1.15, 0.08), std(0xd9a07c, { roughness: 0.9 }), XS.length * 3);
+    var corals = new THREE.InstancedMesh(new THREE.IcosahedronGeometry(0.13, 0), std(0xffffff, { roughness: 0.6 }), 600);
+    var palette = [0xff9e86, 0xf6c177, 0xd9779a, 0xb7d36b, 0xf28e5c, 0x8fd3c8];
+    var ib = 0, ip = 0, ic = 0;
+    XS.forEach(function (x, k) {
+      m.makeTranslation(x, -5.5, 6.22); rails.setMatrixAt(k, m);
+      ROWS.forEach(function (y) {
+        m.makeTranslation(x, y, 6.44); panels.setMatrixAt(ip++, m);
+        [-0.4, 0.4].forEach(function (dy) { m.makeTranslation(x, y + dy, 6.2); brackets.setMatrixAt(ib++, m); });
+        var n = 1 + Math.floor(rnd() * (y === -8 ? 5 : 3));
+        for (var q = 0; q < n && ic < 600; q++) {
+          var sc = 0.7 + rnd() * 1.1;
+          m.makeScale(sc, sc, sc * 0.7).setPosition(x + (rnd() - 0.5) * 0.85, y + (rnd() - 0.5) * 0.85, 6.55);
+          corals.setMatrixAt(ic, m); c.setHex(palette[Math.floor(rnd() * palette.length)]); corals.setColorAt(ic, c); ic++;
+        }
+      });
     });
-    var tileGeo = new THREE.CylinderGeometry(0.42, 0.42, 0.14, 6);
-    var tiles = new THREE.InstancedMesh(tileGeo, std(0xd48a78), 28 * 3 * 3);
-    var juvGeo = new THREE.IcosahedronGeometry(0.16, 0);
-    var juv = new THREE.InstancedMesh(juvGeo, std(0xffffff, { roughness: 0.6 }), 200);
-    var m = new THREE.Matrix4(), i = 0, j = 0, seed = 3; function rnd() { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; }
-    var palette = [0xff9e86, 0xf6c177, 0xd9779a, 0xb7d36b, 0xf28e5c];
-    var c = new THREE.Color();
-    [[6, -4], [10, -8], [14, -12]].forEach(function (t) {
-      for (var row = 0; row < 3; row++) for (var col = 0; col < 28; col++) {
-        var x = -13.5 + col, z = t[0] + 0.8 + row * 1.2 + (col % 2) * 0.3;
-        m.makeTranslation(x, t[1] + 0.07, z); tiles.setMatrixAt(i++, m);
-        if (rnd() < 0.8 && j < 200) { m.makeTranslation(x + (rnd() - 0.5) * 0.4, t[1] + 0.2, z + (rnd() - 0.5) * 0.4); juv.setMatrixAt(j, m); c.setHex(palette[Math.floor(rnd() * palette.length)]); juv.setColorAt(j, c); j++; }
-      }
-    });
-    juv.count = j;
-    tiles.instanceMatrix.needsUpdate = true; juv.instanceMatrix.needsUpdate = true; if (juv.instanceColor) juv.instanceColor.needsUpdate = true;
-    groups.A.add(tiles); groups.A.add(juv);
+    corals.count = ic;
+    [rails, brackets, panels, corals].forEach(function (im) { im.instanceMatrix.needsUpdate = true; groups.A.add(im); });
+    if (corals.instanceColor) corals.instanceColor.needsUpdate = true;
   })();
 
-  // B — nursery towers with moving racks
-  var racks = [], cables = [], rackY = MODES.normal.rack;
+  // B — floating elevator nursery platform (winch lowers the tray stack)
+  var racks = [], cables = [], rackY = MODES.normal.rack, CABLE_TOP = 2.2;
   (function () {
     var steel = std(0x41535a, { metalness: 0.4, roughness: 0.55 }), amber = std(0xf0b23e, { roughness: 0.5 });
-    var postGeo = new THREE.CylinderGeometry(0.1, 0.1, 19.6, 8);
-    var plugGeo = new THREE.CylinderGeometry(0.06, 0.06, 0.12, 6), fragGeo = new THREE.IcosahedronGeometry(0.1, 0);
+    var plat = new THREE.Group(); plat.position.set(4, 0, 22);
+    var W = 10, D = 6;
+    [[0, -D / 2, W, true], [0, D / 2, W, true], [-W / 2, 0, D, false], [W / 2, 0, D, false]].forEach(function (e) {
+      var pip = new THREE.Mesh(new THREE.CylinderGeometry(0.32, 0.32, e[2], 14), amber);
+      if (e[3]) pip.rotation.z = Math.PI / 2; else pip.rotation.x = Math.PI / 2;
+      pip.position.set(e[0], 0.05, e[1]); plat.add(pip);
+    });
+    [-2.5, 0, 2.5].forEach(function (x) { var cb = new THREE.Mesh(new THREE.CylinderGeometry(0.2, 0.2, D, 10), amber); cb.rotation.x = Math.PI / 2; cb.position.set(x, 0.05, 0); plat.add(cb); });
+    [-D / 2 + 0.6, D / 2 - 0.6].forEach(function (z) { var wk = new THREE.Mesh(new THREE.BoxGeometry(W, 0.08, 0.9), steel); wk.position.set(0, 0.45, z); plat.add(wk); });
+    var house = new THREE.Mesh(new THREE.BoxGeometry(2.4, 1.6, 1.8), std(0x34444b)); house.position.set(0, 1.2, 0); plat.add(house);
+    var roof = new THREE.Mesh(new THREE.BoxGeometry(2.8, 0.06, 2.2), std(0x1f3a63, { metalness: 0.5, roughness: 0.35 })); roof.position.set(0, 2.15, 0); roof.rotation.x = -0.2; plat.add(roof);
+    var POSTS = [[-W / 2 + 0.8, -D / 2 + 0.8], [W / 2 - 0.8, -D / 2 + 0.8], [W / 2 - 0.8, D / 2 - 0.8], [-W / 2 + 0.8, D / 2 - 0.8]];
+    POSTS.forEach(function (pp) {
+      var post = new THREE.Mesh(new THREE.CylinderGeometry(0.07, 0.07, 1.8, 8), steel); post.position.set(pp[0], 1.3, pp[1]); plat.add(post);
+      var cab = new THREE.Mesh(new THREE.CylinderGeometry(0.025, 0.025, 1, 5), steel); cab.position.set(pp[0], 0, pp[1]); plat.add(cab); cables.push(cab);
+    });
+    var rack = new THREE.Group();
     var palette = [0xff9e86, 0xf6c177, 0xd9779a, 0xe8b07a, 0xc7d96f];
-    var c = new THREE.Color(), m = new THREE.Matrix4(), seed = 5; function rnd() { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; }
-    [-7, 7].forEach(function (tx) {
-      var tower = new THREE.Group(); tower.position.set(tx, 0, 22);
-      [[-1.3, -0.8], [1.3, -0.8], [-1.3, 0.8], [1.3, 0.8]].forEach(function (p) {
-        var post = new THREE.Mesh(postGeo, steel); post.position.set(p[0], -5.2, p[1]); tower.add(post);
-      });
-      var top = new THREE.Mesh(new THREE.BoxGeometry(2.9, 0.25, 1.9), steel); top.position.y = 4.6; tower.add(top);
-      var winch = new THREE.Mesh(new THREE.BoxGeometry(0.9, 0.6, 0.7), amber); winch.position.y = 5.05; tower.add(winch);
-      var rack = new THREE.Group();
-      var plugs = new THREE.InstancedMesh(plugGeo, std(0xcfc6b4), 120), frags = new THREE.InstancedMesh(fragGeo, std(0xffffff, { roughness: 0.6 }), 120);
-      var k = 0;
-      for (var tr = 0; tr < 3; tr++) {
-        var tray = new THREE.Mesh(new THREE.BoxGeometry(2.4, 0.07, 1.4), amber); tray.position.y = -tr * 1.1; rack.add(tray);
-        for (var a = 0; a < 8; a++) for (var b = 0; b < 5; b++) {
-          var px = -1.05 + a * 0.3, pz = -0.5 + b * 0.25, py = -tr * 1.1 + 0.09;
-          m.makeTranslation(px, py, pz); plugs.setMatrixAt(k, m);
-          m.makeTranslation(px, py + 0.1, pz); frags.setMatrixAt(k, m); c.setHex(palette[Math.floor(rnd() * palette.length)]); frags.setColorAt(k, c); k++;
-        }
+    var frags = new THREE.InstancedMesh(new THREE.IcosahedronGeometry(0.11, 0), std(0xffffff, { roughness: 0.6 }), 14 * 7 * 3);
+    var c = new THREE.Color(), m = new THREE.Matrix4(), k = 0, seed = 5; function rnd() { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; }
+    for (var tr = 0; tr < 3; tr++) {
+      var tray = new THREE.Mesh(new THREE.BoxGeometry(8.6, 0.1, 4.6), std(0xd9dde0, { roughness: 0.6 })); tray.position.y = -tr * 0.8; rack.add(tray);
+      for (var a = 0; a < 14; a++) for (var b = 0; b < 7; b++) {
+        m.makeTranslation(-4.0 + a * 8.0 / 13, -tr * 0.8 + 0.13, -2.0 + b * 4.0 / 6); frags.setMatrixAt(k, m);
+        c.setHex(palette[Math.floor(rnd() * palette.length)]); frags.setColorAt(k, c); k++;
       }
-      plugs.instanceMatrix.needsUpdate = true; frags.instanceMatrix.needsUpdate = true; if (frags.instanceColor) frags.instanceColor.needsUpdate = true;
-      rack.add(plugs); rack.add(frags);
-      rack.position.y = rackY; tower.add(rack); racks.push(rack);
-      [-0.9, 0.9].forEach(function (cx) {
-        var cab = new THREE.Mesh(new THREE.CylinderGeometry(0.03, 0.03, 1, 5), steel); cab.position.x = cx; tower.add(cab); cables.push(cab);
-      });
-      groups.B.add(tower);
+    }
+    frags.instanceMatrix.needsUpdate = true; if (frags.instanceColor) frags.instanceColor.needsUpdate = true;
+    rack.add(frags); rack.position.y = rackY; plat.add(rack); racks.push(rack);
+    groups.B.add(plat);
+    // mooring lines + anchors
+    var rope = std(0x2c2f30);
+    [[-1, 19, -7, 14], [9, 19, 15, 14], [9, 25, 15, 30], [-1, 25, -7, 30]].forEach(function (mr) {
+      var a = new THREE.Vector3(mr[0], -0.2, mr[1]), b = new THREE.Vector3(mr[2], -14.6, mr[3]);
+      var d = new THREE.Vector3().subVectors(b, a), len = d.length();
+      var ln = new THREE.Mesh(new THREE.CylinderGeometry(0.04, 0.04, len, 5), rope);
+      ln.position.copy(a).addScaledVector(d, 0.5); ln.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), d.normalize()); groups.B.add(ln);
+      var an = new THREE.Mesh(new THREE.BoxGeometry(1.2, 0.7, 1.2), std(0x55595a)); an.position.set(mr[2], -14.7, mr[3]); groups.B.add(an);
     });
   })();
   function placeRack(y) {
     racks.forEach(function (r) { r.position.y = y; });
-    var top = 4.5, len = top - y;
-    cables.forEach(function (c) { c.scale.y = len; c.position.y = y + len / 2; });
+    var len = CABLE_TOP - (y - 1.6);
+    cables.forEach(function (c) { c.scale.y = len; c.position.y = CABLE_TOP - len / 2; });
   }
   placeRack(rackY);
 
-  // C — shade canopy on a roller
-  var canopy, canopyEdge, canopyDrop, shadeAmt = 0, SHADE_MAX = 17.5, canopyTex;
+  // C — shade canopy on a roller (deploys outward along 10 arms, above the water)
+  var canopy, canopyEdge, shadeAmt = 0, SHADE_MAX = Math.hypot(8.9, 0.95), SHADE_TILT = Math.atan2(0.95, 8.9), canopyTex;
   (function () {
-    var roller = new THREE.Mesh(new THREE.CylinderGeometry(0.38, 0.38, 28.5, 16), std(0x6f7f86, { metalness: 0.3, roughness: 0.5 }));
-    roller.rotation.z = Math.PI / 2; roller.position.set(0, 4.4, 5.55); groups.C.add(roller);
+    var steel = std(0x8b979c, { metalness: 0.5, roughness: 0.45 });
+    var roller = new THREE.Mesh(new THREE.CylinderGeometry(0.42, 0.42, 55, 16), std(0x33424a, { metalness: 0.3, roughness: 0.5 }));
+    roller.rotation.z = Math.PI / 2; roller.position.set(0, 3.45, 6.4); groups.C.add(roller);
+    function bar(a, b, r) {
+      var d = new THREE.Vector3().subVectors(b, a), len = d.length();
+      var mesh = new THREE.Mesh(new THREE.CylinderGeometry(r, r, len, 6), steel);
+      mesh.position.copy(a).addScaledVector(d, 0.5); mesh.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), d.normalize()); groups.C.add(mesh);
+    }
+    for (var x = -27; x <= 27; x += 6) {
+      bar(new THREE.Vector3(x, 3.3, 6.4), new THREE.Vector3(x, 4.4, 15.3), 0.08);
+      bar(new THREE.Vector3(x, 1.0, 6.1), new THREE.Vector3(x, 3.9, 10.5), 0.06);
+    }
     var cv = document.createElement("canvas"); cv.width = cv.height = 64; var g = cv.getContext("2d");
-    g.fillStyle = "#26363c"; g.fillRect(0, 0, 64, 64); g.strokeStyle = "#a9c0c8"; g.lineWidth = 5;
+    g.fillStyle = "#1f3036"; g.fillRect(0, 0, 64, 64); g.strokeStyle = "#a9c0c8"; g.lineWidth = 5;
     for (var i = 0; i <= 64; i += 16) { g.beginPath(); g.moveTo(i, 0); g.lineTo(i, 64); g.stroke(); g.beginPath(); g.moveTo(0, i); g.lineTo(64, i); g.stroke(); }
     canopyTex = new THREE.CanvasTexture(cv); canopyTex.wrapS = canopyTex.wrapT = THREE.RepeatWrapping;
-    var mat = new THREE.MeshStandardMaterial({ map: canopyTex, transparent: true, opacity: 0.9, side: THREE.DoubleSide, roughness: 0.9, depthWrite: false, emissive: 0x1d2c31 });
-    var g2 = new THREE.PlaneGeometry(28, 1); g2.rotateX(-Math.PI / 2); g2.translate(0, 0, 0.5);
-    canopy = new THREE.Mesh(g2, mat); canopy.position.set(0, -0.3, 6.4); groups.C.add(canopy);
-    var drop = new THREE.PlaneGeometry(28, 1); drop.translate(0, 0.5, 0);
-    canopyDrop = new THREE.Mesh(drop, mat); canopyDrop.position.set(0, -0.3, 6.0); canopyDrop.scale.y = 4.6; canopyDrop.rotation.x = -0.2; groups.C.add(canopyDrop);
-    canopyEdge = new THREE.Mesh(new THREE.CylinderGeometry(0.16, 0.16, 28, 10), std(0xe9e1c9)); canopyEdge.rotation.z = Math.PI / 2; canopyEdge.position.set(0, -0.2, 6.4); groups.C.add(canopyEdge);
+    var mat = new THREE.MeshStandardMaterial({ map: canopyTex, transparent: true, opacity: 0.85, side: THREE.DoubleSide, roughness: 0.9, depthWrite: false, emissive: 0x1d2c31 });
+    var g2 = new THREE.PlaneGeometry(54, 1); g2.rotateX(-Math.PI / 2); g2.translate(0, 0, 0.5);
+    canopy = new THREE.Mesh(g2, mat); canopy.position.set(0, 3.45, 6.4); canopy.rotation.x = -SHADE_TILT; groups.C.add(canopy);
+    canopyEdge = new THREE.Mesh(new THREE.CylinderGeometry(0.14, 0.14, 54, 10), std(0xe9e1c9)); canopyEdge.rotation.z = Math.PI / 2; groups.C.add(canopyEdge);
   })();
   function placeShade(a) {
     var L = Math.max(0.001, a * SHADE_MAX);
-    canopy.scale.z = L; canopyTex.repeat.set(28, L);
-    canopyEdge.position.z = 6.4 + L;
-    canopy.visible = canopyDrop.visible = canopyEdge.visible = a > 0.01;
+    canopy.scale.z = L; canopyTex.repeat.set(54, L);
+    canopyEdge.position.set(0, 3.45 + L * Math.sin(SHADE_TILT), 6.4 + L * Math.cos(SHADE_TILT));
+    canopy.visible = canopyEdge.visible = a > 0.01;
   }
   placeShade(0);
 
@@ -695,21 +720,21 @@ td .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
   var kelp, kelpBase = [];
   (function () {
     var rope = std(0xc7b98c), buoy = std(0xff8a3d, { roughness: 0.5 });
-    var lines = [18.5, 21, 23.5], Z0 = 4, Z1 = 32, ZC = (Z0 + Z1) / 2;
+    var lines = [31.25, 34.75], Z0 = 6, Z1 = 40, ZC = (Z0 + Z1) / 2, RY = -1.5;
     lines.forEach(function (x) {
-      var r = new THREE.Mesh(new THREE.CylinderGeometry(0.06, 0.06, Z1 - Z0, 6), rope); r.rotation.x = Math.PI / 2; r.position.set(x, -3, ZC); groups.D.add(r);
-      for (var bz = Z0; bz <= Z1; bz += 7) {
+      var r = new THREE.Mesh(new THREE.CylinderGeometry(0.06, 0.06, Z1 - Z0, 6), rope); r.rotation.x = Math.PI / 2; r.position.set(x, RY, ZC); groups.D.add(r);
+      for (var bz = Z0; bz <= Z1; bz += 4) {
         var b = new THREE.Mesh(new THREE.SphereGeometry(0.35, 12, 8), buoy); b.position.set(x, 0.05, bz); groups.D.add(b);
-        var l = new THREE.Mesh(new THREE.CylinderGeometry(0.02, 0.02, 3, 4), rope); l.position.set(x, -1.5, bz); groups.D.add(l);
+        var l = new THREE.Mesh(new THREE.CylinderGeometry(0.02, 0.02, 1.5, 4), rope); l.position.set(x, -0.75, bz); groups.D.add(l);
       }
       [Z0, Z1].forEach(function (az) {
         var sg = az === Z0 ? -1 : 1;
-        var a = new THREE.Mesh(new THREE.CylinderGeometry(0.03, 0.03, 12.6, 4), rope); a.position.set(x, -9, az + sg * 1.5); a.rotation.x = -sg * 0.24; groups.D.add(a);
+        var a = new THREE.Mesh(new THREE.CylinderGeometry(0.03, 0.03, 13.6, 4), rope); a.position.set(x, -8.2, az + sg * 1.6); a.rotation.x = -sg * 0.24; groups.D.add(a);
       });
     });
-    var blade = new THREE.PlaneGeometry(0.55, 5, 1, 4); blade.translate(0, -2.5, 0);
-    var p = blade.attributes.position; for (var i = 0; i < p.count; i++) { var y = p.getY(i); p.setX(i, p.getX(i) * (0.55 + 0.45 * Math.sin(-y / 5 * Math.PI))); }
-    lines.forEach(function (x) { for (var z = Z0 + 0.4; z <= Z1 - 0.4; z += 0.85) kelpBase.push([x, -3, z, Math.random() * 6.28]); });
+    var blade = new THREE.PlaneGeometry(0.45, 3.2, 1, 4); blade.translate(0, -1.6, 0);
+    var p = blade.attributes.position; for (var i = 0; i < p.count; i++) { var y = p.getY(i); p.setX(i, p.getX(i) * (0.55 + 0.45 * Math.sin(-y / 3.2 * Math.PI))); }
+    lines.forEach(function (x) { for (var z = Z0 + 0.4; z <= Z1 - 0.4; z += 0.6) kelpBase.push([x, RY, z, Math.random() * 6.28]); });
     kelp = new THREE.InstancedMesh(blade, std(0x7a6a2a, { side: THREE.DoubleSide, roughness: 0.8 }), kelpBase.length);
     groups.D.add(kelp);
   })();
@@ -724,49 +749,43 @@ td .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
   }
   swayKelp(0, 1);
 
-  // E — solar panels, cables, anodes
+  // E — solar panels on the crest + control box
   var cableMat;
   (function () {
     var panelMat = std(0x1f3a63, { metalness: 0.5, roughness: 0.35 }), frame = std(0x8a9399);
-    for (var px = -12.5; px <= 12.5; px += 5) {
-      var p = new THREE.Mesh(new THREE.BoxGeometry(4.2, 0.08, 2.0), panelMat); p.position.set(px, 4.75, 0.6); p.rotation.x = -0.35; groups.E.add(p);
-      var leg = new THREE.Mesh(new THREE.BoxGeometry(0.12, 0.7, 0.12), frame); leg.position.set(px, 4.3, 1.1); groups.E.add(leg);
+    for (var px = -24; px <= -6; px += 3) {
+      var p = new THREE.Mesh(new THREE.BoxGeometry(2.6, 0.06, 1.6), panelMat); p.position.set(px, 4.1, 1.0); p.rotation.x = 0.44; groups.E.add(p);
+      var leg = new THREE.Mesh(new THREE.BoxGeometry(0.1, 0.9, 0.1), frame); leg.position.set(px, 3.45, 1.0); groups.E.add(leg);
     }
+    var box = new THREE.Mesh(new THREE.BoxGeometry(1.2, 1.4, 0.8), std(0x34444b)); box.position.set(-3.5, 3.7, 2.0); groups.E.add(box);
     cableMat = new THREE.MeshStandardMaterial({ color: 0x57d4ff, emissive: 0x1a86b0, emissiveIntensity: 0.8, roughness: 0.4 });
-    [-1, 1].forEach(function (sgn) {
-      var x = 7 * sgn;
-      var air = new THREE.CatmullRomCurve3([new THREE.Vector3(x - sgn * 2.5, 4.4, 1.3), new THREE.Vector3(x, 4.6, 5.5), new THREE.Vector3(x, 4.0, 13), new THREE.Vector3(x, 4.9, 21.2)]);
-      groups.E.add(new THREE.Mesh(new THREE.TubeGeometry(air, 40, 0.07, 6, false), cableMat));
-      var sea = new THREE.CatmullRomCurve3([new THREE.Vector3(x + sgn * 1.3, -14.8, 22.8), new THREE.Vector3(x + sgn * 3.5, -14.85, 24.6), new THREE.Vector3(12.5 * sgn, -14.8, 25.5)]);
-      groups.E.add(new THREE.Mesh(new THREE.TubeGeometry(sea, 20, 0.07, 6, false), cableMat));
-      var anode = new THREE.Mesh(new THREE.BoxGeometry(1.8, 0.08, 1.8), std(0xc5d2d9, { metalness: 0.6, roughness: 0.3, emissive: 0x0f3a4a })); anode.position.set(12.5 * sgn, -14.75, 25.5); groups.E.add(anode);
-      var grid = new THREE.GridHelper(1.8, 6, 0x57d4ff, 0x57d4ff); grid.position.set(12.5 * sgn, -14.68, 25.5); groups.E.add(grid);
-    });
+    var run = new THREE.CatmullRomCurve3([new THREE.Vector3(-6, 3.1, 1.3), new THREE.Vector3(-4.2, 3.15, 1.8), new THREE.Vector3(-3.5, 3.1, 4.5), new THREE.Vector3(-3.5, 3.3, 6.0)]);
+    groups.E.add(new THREE.Mesh(new THREE.TubeGeometry(run, 24, 0.07, 6, false), cableMat));
   })();
 
   // F — sensor mooring
   var pulse, ring;
   (function () {
     var yel = std(0xf4e04d, { roughness: 0.45 });
-    var line = new THREE.Mesh(new THREE.CylinderGeometry(0.04, 0.04, 15, 5), std(0xd8d2b0)); line.position.set(0, -7.5, 22); groups.F.add(line);
-    var b = new THREE.Mesh(new THREE.SphereGeometry(0.6, 16, 12), yel); b.position.set(0, 0.25, 22); groups.F.add(b);
-    var mast = new THREE.Mesh(new THREE.CylinderGeometry(0.05, 0.05, 1.6, 6), std(0xd8d2b0)); mast.position.set(0, 1.5, 22); groups.F.add(mast);
-    [-3, -6, -10, -14].forEach(function (y) { var s = new THREE.Mesh(new THREE.CylinderGeometry(0.16, 0.16, 0.45, 10), yel); s.position.set(0, y, 22); groups.F.add(s); });
-    var anchor = new THREE.Mesh(new THREE.BoxGeometry(0.9, 0.5, 0.9), std(0x55595a)); anchor.position.set(0, -14.8, 22); groups.F.add(anchor);
-    pulse = new THREE.Mesh(new THREE.SphereGeometry(0.14, 10, 8), new THREE.MeshBasicMaterial({ color: 0xfff6a6 })); pulse.position.set(0, -14, 22); groups.F.add(pulse);
-    ring = new THREE.Mesh(new THREE.TorusGeometry(0.4, 0.03, 6, 24), new THREE.MeshBasicMaterial({ color: 0xfff6a6, transparent: true })); ring.position.set(0, 2.35, 22); ring.rotation.x = Math.PI / 2; groups.F.add(ring);
+    var line = new THREE.Mesh(new THREE.CylinderGeometry(0.04, 0.04, 15, 5), std(0xd8d2b0)); line.position.set(-8, -7.5, 16); groups.F.add(line);
+    var b = new THREE.Mesh(new THREE.SphereGeometry(0.6, 16, 12), yel); b.position.set(-8, 0.25, 16); groups.F.add(b);
+    var mast = new THREE.Mesh(new THREE.CylinderGeometry(0.05, 0.05, 1.6, 6), std(0xd8d2b0)); mast.position.set(-8, 1.5, 16); groups.F.add(mast);
+    [-3, -6, -10, -14].forEach(function (y) { var s = new THREE.Mesh(new THREE.CylinderGeometry(0.16, 0.16, 0.45, 10), yel); s.position.set(-8, y, 16); groups.F.add(s); });
+    var anchor = new THREE.Mesh(new THREE.BoxGeometry(0.9, 0.5, 0.9), std(0x55595a)); anchor.position.set(-8, -14.8, 16); groups.F.add(anchor);
+    pulse = new THREE.Mesh(new THREE.SphereGeometry(0.14, 10, 8), new THREE.MeshBasicMaterial({ color: 0xfff6a6 })); pulse.position.set(-8, -14, 16); groups.F.add(pulse);
+    ring = new THREE.Mesh(new THREE.TorusGeometry(0.4, 0.03, 6, 24), new THREE.MeshBasicMaterial({ color: 0xfff6a6, transparent: true })); ring.position.set(-8, 2.35, 16); ring.rotation.x = Math.PI / 2; groups.F.add(ring);
   })();
 
   // Water surface + low-salinity lens
   var water, waterBase, lens, waveAmp = MODES.normal.wave, lensAmt = 0;
   (function () {
-    var g = new THREE.PlaneGeometry(140, 140, 56, 56); g.rotateX(-Math.PI / 2);
+    var g = new THREE.PlaneGeometry(170, 170, 64, 64); g.rotateX(-Math.PI / 2);
     waterBase = g.attributes.position.array.slice();
     water = new THREE.Mesh(g, new THREE.MeshBasicMaterial({ color: 0x5ab8c4, transparent: true, opacity: 0.2, side: THREE.DoubleSide, depthWrite: false }));
     scene.add(water);
     var wire = new THREE.Mesh(g, new THREE.MeshBasicMaterial({ color: 0x9fe0e8, wireframe: true, transparent: true, opacity: 0.06, depthWrite: false }));
     scene.add(wire);
-    lens = new THREE.Mesh(new THREE.BoxGeometry(140, 4, 140), new THREE.MeshBasicMaterial({ color: 0x9fe8ff, transparent: true, opacity: 0, depthWrite: false }));
+    lens = new THREE.Mesh(new THREE.BoxGeometry(170, 4, 170), new THREE.MeshBasicMaterial({ color: 0x9fe8ff, transparent: true, opacity: 0, depthWrite: false }));
     lens.position.y = -2.05; scene.add(lens);
   })();
   function waves(t) {
@@ -789,18 +808,18 @@ td .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
   });
   [[0, "수면 0"], [-5, "-5"], [-10, "-10"], [-15, "해저 -15"]].forEach(function (d) {
     var el = document.createElement("span"); el.className = "vp-depth"; el.textContent = d[1] + " m"; labelsEl.appendChild(el);
-    depthTags.push({ el: el, pos: new THREE.Vector3(-17.4, d[0], 26) });
+    depthTags.push({ el: el, pos: new THREE.Vector3(-32.4, d[0], 30) });
   });
   (function () {
     var tick = new THREE.Group();
     var mat = new THREE.LineBasicMaterial({ color: 0xbfe0e3, transparent: true, opacity: 0.75 });
-    var g = new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(-17, 0, 26), new THREE.Vector3(-17, -15, 26)]);
+    var g = new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(-32, 0, 30), new THREE.Vector3(-32, -15, 30)]);
     tick.add(new THREE.Line(g, mat));
-    [0, -5, -10, -15].forEach(function (y) { tick.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(-17, y, 26), new THREE.Vector3(-16, y, 26)]), mat)); });
+    [0, -5, -10, -15].forEach(function (y) { tick.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(-32, y, 30), new THREE.Vector3(-31, y, 30)]), mat)); });
     base.add(tick);
   })();
   lensTag = document.createElement("span"); lensTag.className = "vp-lens"; lensTag.textContent = "저염분층 (예시 0~4 m)"; lensTag.hidden = true; labelsEl.appendChild(lensTag);
-  var lensPos = new THREE.Vector3(6, -2, 30);
+  var lensPos = new THREE.Vector3(14, -2, 34);
 
   applyVisibility = function () {
     MODULES.forEach(function (m) { groups[m.id].visible = state.visible[m.id]; });
@@ -810,10 +829,10 @@ td .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
 
   // Views
   var VIEWS = {
-    overview: { pos: [-42, 16, 52], tgt: [0, -5, 7] },
-    section: { pos: [-66, -3, 6], tgt: [0, -5, 6] },
-    harbor: { pos: [10, -5, 58], tgt: [0, -7, 12] },
-    top: { pos: [0.01, 72, 10], tgt: [0, -5, 9] }
+    overview: { pos: [-58, 20, 66], tgt: [0, -5, 12] },
+    section: { pos: [-92, -3, 13], tgt: [0, -5, 13] },
+    harbor: { pos: [8, -5, 78], tgt: [0, -7, 12] },
+    top: { pos: [0.01, 105, 16], tgt: [0, -5, 16] }
   };
   var camAnim = null;
   document.querySelector(".vp-views").addEventListener("click", function (e) {
